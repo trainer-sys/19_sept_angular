@@ -9,4 +9,26 @@ import { Component } from '@angular/core';
 })
 export class DataBindingComponent {
 
+    // Properties
+    playerName:string = "Virat"
+    playerScore:number = 100
+
+    totalRuns:number = 14675
+    totalMatches:number = 302
+
+
+    // Methods
+    calculateAverage(){
+      return this.totalRuns / this.totalMatches
+    }
+
+    increaseScore(){
+      this.totalRuns += 10
+    }
+
+    decreaseScore() {
+      this.totalRuns -= 10
+    }
+
+
 }

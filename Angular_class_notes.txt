@@ -1,0 +1,35 @@
+# Create a new component
+> ng generate component <component-name>
+
+# To run the app
+> ng serve
+
+# How do we find the selector of any component?
+> Refer to the component's .ts file and check the @Component decorator for the class
+
+# Component will typically have 4 files:
+- .html    (Optional)
+- .css     (Optional)
+- .ts      (Required)
+- .spec.ts (Optional)
+
+# Style our application
+- Angular Material Design
+    > ng add @angular/material
+
+- Bootstrap
+    > npm i bootstrap@5.3.3
+
+# json files
+1) package.json > contains all the installed packages
+2) package-lock.json > contains all the installed packages along with their dependencies
+
+=====================
+
+Data Binding
+
+
+
+
+
+
