@@ -4,21 +4,40 @@
 <hr>
 <!-- 1. Interpolation -->
 <h3>1) Interpolation</h3>
-<p>Welcome {{ playerName }}</p>
+<!-- <p>Welcome {{ playerName }}</p>
 <p>Score is {{ playerScore }}</p>
 
-<p>Congrats {{playerName}} for scoring {{playerScore }} runs </p>
+<p>Congrats {{playerName}} for scoring {{playerScore }} runs </p> -->
 
 <!-- expressions -->
-<p>Total Runs: {{ totalRuns }}</p>
+<!-- <p>Total Runs: {{ totalRuns }}</p>
 <p>Average: {{ (totalRuns / totalMatches).toFixed(2) }}</p>
 <p>Average: {{ calculateAverage().toFixed(2)}}</p>
-<p>Batter Type: {{ calculateAverage() > 50 ? "Star Batter" : "Normal Batter" }}</p>
+<p>Batter Type: {{ calculateAverage() > 50 ? "Star Batter" : "Normal Batter" }}</p> -->
 
 <hr>
 <!-- 2. Event Binding -->
 <h3>2) Event Binding</h3>
-<button class="btn btn-primary" (click)="increaseScore()"> Increase score by 10</button>
+<!-- <button class="btn btn-primary" (click)="increaseScore()"> Increase score by 10</button>
 
 <button class="btn btn-danger" (click)="decreaseScore()"> Decrease score by 10</button>
+-->
+
+<hr>
+
+<!-- 3. Property Binding -->
+ <h3>3) Property Binding</h3>
+<!--<a [href]="myURL">Visit the website </a>
+<br>
+<button [disabled]="disable" (click)="changeSiteURL()">Change Site Link</button>
+
+
+ <img [src]="myImageURL" alt="" height="200px"> -->
+
+ <hr>
+<!-- 4. Two Way Binding -->
+<h3>4) Two Way Binding</h3>
+<p>Hello {{name}}</p> <!-- class => html -->
+<input [(ngModel)]="name" > <!-- class <=> html -->
+
 

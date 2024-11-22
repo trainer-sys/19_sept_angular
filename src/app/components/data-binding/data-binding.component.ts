@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './data-binding.component.html',
   styleUrl: './data-binding.component.css'
 })
@@ -16,6 +17,13 @@ export class DataBindingComponent {
     totalRuns:number = 14675
     totalMatches:number = 302
 
+    myURL = "https://www.google.co.in"
+
+    disable = false
+
+    myImageURL = "assets/mountain.png"
+
+    name:string = ""
 
     // Methods
     calculateAverage(){
@@ -30,5 +38,7 @@ export class DataBindingComponent {
       this.totalRuns -= 10
     }
 
-
+    changeSiteURL() {
+      this.myURL = "https://www.cricbuzz.com"
+    }
 }

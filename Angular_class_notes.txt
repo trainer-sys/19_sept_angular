@@ -28,6 +28,19 @@
 
 Data Binding
 
+- Interpolation 
+>> {{ }}
+
+- Event Binding 
+>> ( )
+
+- Property Binding (href, disabled, src etc...)
+>> [ ]
+
+- Two Way Binding (ngModel) -> FormsModule
+>> [( )]
+
+
 
 
 
